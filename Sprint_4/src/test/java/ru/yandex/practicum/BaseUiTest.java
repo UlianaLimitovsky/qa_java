@@ -12,13 +12,14 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class BaseUiTest {
     protected WebDriver webDriver;
+    private static final String BASE_URL = "https://qa-scooter.praktikum-services.ru";
 
 //    @Before
 //    public void setUp() {
 //        WebDriverManager.firefoxdriver().setup();
 //        webDriver = new FirefoxDriver();
 //        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//        webDriver.get("https://qa-scooter.praktikum-services.ru");
+//        webDriver.get(mainPageUrl);
 //    }
 
 //    @Before
@@ -26,7 +27,7 @@ public abstract class BaseUiTest {
 //        WebDriverManager.chromedriver().setup();
 //        webDriver = new ChromeDriver();
 //        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//        webDriver.get("https://qa-scooter.praktikum-services.ru");
+//        webDriver.get(mainPageUrl);
 //    }
 
     @Before
@@ -34,7 +35,7 @@ public abstract class BaseUiTest {
         WebDriverManager.edgedriver().setup();
         webDriver = new EdgeDriver();
         webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        webDriver.get("https://qa-scooter.praktikum-services.ru");
+        webDriver.get(BASE_URL));
     }
 
     @After

@@ -10,34 +10,34 @@ public class MainPage extends BasePage {
     // Локаторы
 
     // Кнопка принятия cookie
-    protected By cookieButton = By.id("rcc-confirm-button");
+    public By cookieButton = By.id("rcc-confirm-button");
     // Вопрос 1 "Сколько это стоит? И как оплатить?"
-    protected By question0 = By.id("accordion__heading-0");
+    public By question0 = By.id("accordion__heading-0");
     // Вопрос 2 "Хочу сразу несколько самокатов! Так можно?"
-    protected By question1 = By.id("accordion__heading-1");
+    public By question1 = By.id("accordion__heading-1");
     // Вопрос 3 "Как рассчитывается время аренды?"
-    protected By question2 = By.id("accordion__heading-2");
+    public By question2 = By.id("accordion__heading-2");
     // Вопрос 4 "Можно ли заказать самокат прямо на сегодня?"
-    protected By question3 = By.id("accordion__heading-3");
+    public By question3 = By.id("accordion__heading-3");
     // Вопрос 5 "Можно ли продлить заказ или вернуть самокат раньше?"
-    protected By question4 = By.id("accordion__heading-4");
+    public By question4 = By.id("accordion__heading-4");
     // Вопрос 6 "Вы привозите зарядку вместе с самокатом?"
-    protected By question5 = By.id("accordion__heading-5");
+    public By question5 = By.id("accordion__heading-5");
     // Вопрос 7 "Можно ли отменить заказ?"
-    protected By question6 = By.id("accordion__heading-6");
+    public By question6 = By.id("accordion__heading-6");
     // Вопрос 8 "Я жизу за МКАДом, привезёте?"
-    protected By question7 = By.id("accordion__heading-7");
+    public By question7 = By.id("accordion__heading-7");
     // Кнопка "Заказать" наверху
-    protected By orderUpButton = By.className("Button_Button__ra12g");
+    public By orderUpButton = By.className("Button_Button__ra12g");
     // Кнопка "Заказать" снизу
-    protected By orderMiddleButton = By.xpath(".//div[@class='Home_FinishButton__1_cWm']/button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
+    public By orderMiddleButton = By.xpath(".//div[@class='Home_FinishButton__1_cWm']/button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
     public MainPage(WebDriver webDriver) {
         super(webDriver);
     }
 
 //    public void open() {
-//        webDriver.get("https://qa-scooter.praktikum-services.ru");
+//        webDriver.get(mainPageUrl);
 //    }
 
     public void clickCookieButton () {

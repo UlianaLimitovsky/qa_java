@@ -3,7 +3,7 @@ package ru.yandex.practicum;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class checkTextInFAQ extends BaseUiTest_one_session {
+public class checkTextInFAQ extends BaseUiTestOneSession {
 
     @Test
     public void checkTextOneInFAQ() {
