@@ -10,34 +10,34 @@ public class MainPage extends BasePage {
     // Локаторы
 
     // Кнопка принятия cookie
-    public By cookieButton = By.id("rcc-confirm-button");
+     By cookieButton = By.id("rcc-confirm-button");
     // Вопрос 1 "Сколько это стоит? И как оплатить?"
-    public By question0 = By.id("accordion__heading-0");
+     By question0 = By.id("accordion__heading-0");
     // Вопрос 2 "Хочу сразу несколько самокатов! Так можно?"
-    public By question1 = By.id("accordion__heading-1");
+     By question1 = By.id("accordion__heading-1");
     // Вопрос 3 "Как рассчитывается время аренды?"
-    public By question2 = By.id("accordion__heading-2");
+    By question2 = By.id("accordion__heading-2");
     // Вопрос 4 "Можно ли заказать самокат прямо на сегодня?"
-    public By question3 = By.id("accordion__heading-3");
+     By question3 = By.id("accordion__heading-3");
     // Вопрос 5 "Можно ли продлить заказ или вернуть самокат раньше?"
-    public By question4 = By.id("accordion__heading-4");
+     By question4 = By.id("accordion__heading-4");
     // Вопрос 6 "Вы привозите зарядку вместе с самокатом?"
-    public By question5 = By.id("accordion__heading-5");
+     By question5 = By.id("accordion__heading-5");
     // Вопрос 7 "Можно ли отменить заказ?"
-    public By question6 = By.id("accordion__heading-6");
+     By question6 = By.id("accordion__heading-6");
     // Вопрос 8 "Я жизу за МКАДом, привезёте?"
-    public By question7 = By.id("accordion__heading-7");
+     By question7 = By.id("accordion__heading-7");
     // Кнопка "Заказать" наверху
-    public By orderUpButton = By.className("Button_Button__ra12g");
+     By orderUpButton = By.className("Button_Button__ra12g");
     // Кнопка "Заказать" снизу
-    public By orderMiddleButton = By.xpath(".//div[@class='Home_FinishButton__1_cWm']/button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
+     By orderMiddleButton = By.xpath(".//div[@class='Home_FinishButton__1_cWm']/button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
     public MainPage(WebDriver webDriver) {
         super(webDriver);
     }
 
 //    public void open() {
-//        webDriver.get(mainPageUrl);
+//        webDriver.get(BASE_URL);
 //    }
 
     public void clickCookieButton () {

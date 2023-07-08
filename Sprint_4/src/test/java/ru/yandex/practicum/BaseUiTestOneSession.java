@@ -9,9 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.html5.WebStorage;
-
 import java.util.concurrent.TimeUnit;
-
 public abstract class BaseUiTestOneSession {
     protected static WebDriver webDriver;
     @BeforeClass
@@ -28,7 +26,7 @@ public abstract class BaseUiTestOneSession {
 
     @Before
     public void openPage() {
-        webDriver.get(mainPageUrl);
+        webDriver.get(BaseUiTest.BASE_URL);
     }
 
 

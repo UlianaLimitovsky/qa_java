@@ -3,8 +3,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
-public class checkOrder extends BaseUiTest_one_session {
-    private static final String NAME_1 = "Ульяна";
+public class checkOrder extends BaseUiTestOneSession {
+     static final String NAME_1 = "Ульяна";
     private static final String SURNAME_1 = "Лимитовская";
     private static final String ADDRESS_1 = "Преображенская пл., 4";
     private static final String UNDERGROUND_1 = "Преображенская площадь";
