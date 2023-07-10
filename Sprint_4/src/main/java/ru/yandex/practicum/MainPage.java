@@ -10,27 +10,27 @@ public class MainPage extends BasePage {
     // Локаторы
 
     // Кнопка принятия cookie
-     By cookieButton = By.id("rcc-confirm-button");
+    private By cookieButton = By.id("rcc-confirm-button");
     // Вопрос 1 "Сколько это стоит? И как оплатить?"
-     By question0 = By.id("accordion__heading-0");
+    private By question0 = By.id("accordion__heading-0");
     // Вопрос 2 "Хочу сразу несколько самокатов! Так можно?"
-     By question1 = By.id("accordion__heading-1");
+    private By question1 = By.id("accordion__heading-1");
     // Вопрос 3 "Как рассчитывается время аренды?"
-    By question2 = By.id("accordion__heading-2");
+    private By question2 = By.id("accordion__heading-2");
     // Вопрос 4 "Можно ли заказать самокат прямо на сегодня?"
-     By question3 = By.id("accordion__heading-3");
+    private By question3 = By.id("accordion__heading-3");
     // Вопрос 5 "Можно ли продлить заказ или вернуть самокат раньше?"
-     By question4 = By.id("accordion__heading-4");
+    private By question4 = By.id("accordion__heading-4");
     // Вопрос 6 "Вы привозите зарядку вместе с самокатом?"
-     By question5 = By.id("accordion__heading-5");
+    private By question5 = By.id("accordion__heading-5");
     // Вопрос 7 "Можно ли отменить заказ?"
-     By question6 = By.id("accordion__heading-6");
+    private By question6 = By.id("accordion__heading-6");
     // Вопрос 8 "Я жизу за МКАДом, привезёте?"
-     By question7 = By.id("accordion__heading-7");
+    private By question7 = By.id("accordion__heading-7");
     // Кнопка "Заказать" наверху
-     By orderUpButton = By.className("Button_Button__ra12g");
+    private By orderUpButton = By.className("Button_Button__ra12g");
     // Кнопка "Заказать" снизу
-     By orderMiddleButton = By.xpath(".//div[@class='Home_FinishButton__1_cWm']/button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
+    private  By orderMiddleButton = By.xpath(".//div[@class='Home_FinishButton__1_cWm']/button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
     public MainPage(WebDriver webDriver) {
         super(webDriver);
@@ -43,19 +43,65 @@ public class MainPage extends BasePage {
     public void clickCookieButton () {
     webDriver.findElement(cookieButton).click();
 }
-
     public void scrollToQuestion () {
         WebElement element = webDriver.findElement(question0);
         ((JavascriptExecutor)webDriver).executeScript("arguments[0].scrollIntoView();",element);
     }
+    public void clickQuestion0 () {
+        webDriver.findElement(question0).click();
+    }
+    public void clickQuestion1 () {
+        webDriver.findElement(question1).click();
+    }
+    public void clickQuestion2 () {
+        webDriver.findElement(question2).click();
+    }
+    public void clickQuestion3 () {
+        webDriver.findElement(question3).click();
+    }
+    public void clickQuestion4 () {
+        webDriver.findElement(question4).click();
+    }
+    public void clickQuestion5 () {
+        webDriver.findElement(question5).click();
+    }
+    public void clickQuestion6 () {
+        webDriver.findElement(question6).click();
+    }
+    public void clickQuestion7 () { webDriver.findElement(question7).click();}
+
+
+
 
     public void clickQuestion (By text) {
         webDriver.findElement(text).click();
     }
 
-    public String getText(By text) {
-        return webDriver.findElement(text).getText();
+    public String getText0() {
+        return webDriver.findElement(question0).getText();
     }
+    public String getText1() {
+        return webDriver.findElement(question1).getText();
+    }
+    public String getText2() {
+        return webDriver.findElement(question2).getText();
+    }
+    public String getText3() {
+        return webDriver.findElement(question3).getText();
+    }
+    public String getText4() {
+        return webDriver.findElement(question4).getText();
+    }
+    public String getText5() {
+        return webDriver.findElement(question5).getText();
+    }
+    public String getText6() {
+        return webDriver.findElement(question6).getText();
+    }
+    public String getText7() {
+        return webDriver.findElement(question7).getText();
+    }
+
 
     public void clickOrderUpButton () {
         webDriver.findElement(orderUpButton).click();

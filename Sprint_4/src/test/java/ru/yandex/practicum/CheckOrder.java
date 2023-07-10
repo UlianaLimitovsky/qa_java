@@ -3,7 +3,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
-public class checkOrder extends BaseUiTestOneSession {
+public class CheckOrder extends BaseUiTestOneSession {
      static final String NAME_1 = "Ульяна";
     private static final String SURNAME_1 = "Лимитовская";
     private static final String ADDRESS_1 = "Преображенская пл., 4";
@@ -18,7 +18,7 @@ public class checkOrder extends BaseUiTestOneSession {
     private static final String PHONE_2 = "+9955838363";
     private static final String DATES_2 = "18.06.2024";
     @Test
-    public void checkOrderUpButton() {
+    public void CheckOrderUpButton() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickOrderUpButton();
         OrderPage orderPage = new OrderPage(webDriver);
@@ -47,7 +47,7 @@ public class checkOrder extends BaseUiTestOneSession {
         Assert.assertTrue("Кнопка 'Посмотреть статус' не найдена", isDisplayed);
     }
     @Test
-    public void checkOrderMiddleButton() {
+    public void CheckOrderMiddleButton() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.clickOrderMiddleButton();
