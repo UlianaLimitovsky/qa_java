@@ -92,4 +92,4 @@ public class CheckTextInFAQ extends BaseUiTestOneSession {
         String actual = mainPage.getText7();
         Assert.assertEquals(expected, actual);
     }
-}
+} 
