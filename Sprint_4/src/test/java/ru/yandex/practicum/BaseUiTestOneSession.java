@@ -9,12 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.html5.WebStorage;
-
 import java.util.concurrent.TimeUnit;
-
-public abstract class BaseUiTest_one_session {
+public abstract class BaseUiTestOneSession {
     protected static WebDriver webDriver;
-
     @BeforeClass
     public static void setUp() {
         WebDriverManager.chromedriver().setup();
@@ -29,7 +26,7 @@ public abstract class BaseUiTest_one_session {
 
     @Before
     public void openPage() {
-        webDriver.get("https://qa-scooter.praktikum-services.ru");
+        webDriver.get(BaseUiTest.BASE_URL);
     }
 
 
