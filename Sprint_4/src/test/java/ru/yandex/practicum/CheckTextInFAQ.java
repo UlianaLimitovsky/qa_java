@@ -6,7 +6,7 @@ import org.junit.Test;
 public class CheckTextInFAQ extends BaseUiTestOneSession {
 
     @Test
-    public void CheckTextOneInFAQ() {
+    public void checkTextOneInFAQ() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.scrollToQuestion();
@@ -17,7 +17,7 @@ public class CheckTextInFAQ extends BaseUiTestOneSession {
     }
 
     @Test
-    public void CheckTextTwoInFAQ() {
+    public void checkTextTwoInFAQ() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.scrollToQuestion();
@@ -28,7 +28,7 @@ public class CheckTextInFAQ extends BaseUiTestOneSession {
     }
 
     @Test
-    public void CheckTextThreeInFAQ() {
+    public void checkTextThreeInFAQ() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.scrollToQuestion();
@@ -39,7 +39,7 @@ public class CheckTextInFAQ extends BaseUiTestOneSession {
     }
 
     @Test
-    public void CheckTextFourInFAQ() {
+    public void checkTextFourInFAQ() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.scrollToQuestion();
@@ -50,7 +50,7 @@ public class CheckTextInFAQ extends BaseUiTestOneSession {
     }
 
     @Test
-    public void CheckTextFiveInFAQ() {
+    public void checkTextFiveInFAQ() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.scrollToQuestion();
@@ -61,7 +61,7 @@ public class CheckTextInFAQ extends BaseUiTestOneSession {
     }
 
     @Test
-    public void CheckTextSixInFAQ() {
+    public void checkTextSixInFAQ() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.scrollToQuestion();
@@ -72,7 +72,7 @@ public class CheckTextInFAQ extends BaseUiTestOneSession {
     }
 
     @Test
-    public void CheckTextSevenInFAQ() {
+    public void checkTextSevenInFAQ() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.scrollToQuestion();
@@ -83,7 +83,7 @@ public class CheckTextInFAQ extends BaseUiTestOneSession {
     }
 
     @Test
-    public void CheckTextEightInFAQ() {
+    public void checkTextEightInFAQ() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.scrollToQuestion();

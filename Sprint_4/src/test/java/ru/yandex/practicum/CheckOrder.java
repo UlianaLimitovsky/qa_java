@@ -18,7 +18,7 @@ public class CheckOrder extends BaseUiTestOneSession {
     private static final String PHONE_2 = "+9955838363";
     private static final String DATES_2 = "18.06.2024";
     @Test
-    public void CheckOrderUpButton() {
+    public void checkOrderUpButton() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickOrderUpButton();
         OrderPage orderPage = new OrderPage(webDriver);
@@ -47,7 +47,7 @@ public class CheckOrder extends BaseUiTestOneSession {
         Assert.assertTrue("Кнопка 'Посмотреть статус' не найдена", isDisplayed);
     }
     @Test
-    public void CheckOrderMiddleButton() {
+    public void checkOrderMiddleButton() {
         MainPage mainPage = new MainPage(webDriver);
         mainPage.clickCookieButton();
         mainPage.clickOrderMiddleButton();
